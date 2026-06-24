@@ -7,9 +7,9 @@ fetch('./page/sample.txt')
   })
   .then(textData => {
     secs = textData.split('\n');
-    console.log(secs);
+    console.log(typeOf secs[1]);
     document.querySelector('main').innerHTML = secs[0];
-    document.getElementById('foot').innerHTML = secs[1] || '';
+    document.getElementById('foot').innerHTML = secs[1];
   })
   .catch(error => {
     document.querySelector('main').innerHTML = '<h2>Error 404</h2><p>This content was not found :(</p>';
