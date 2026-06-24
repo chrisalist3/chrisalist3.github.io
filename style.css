@@ -1,0 +1,88 @@
+:root {
+  color-scheme: light dark;
+}
+
+h1, h2, h3 {
+  font-family: arial, sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
+h1 {
+  font-size: 1.8em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+main {
+  background: light-dark(#ffffff, #121212);
+  color: light-dark(#333333, #e0e0e0);
+  font-family: serif;
+  font-size: 1.1em;
+  margin: auto;
+  margin-top: 1em;
+  padding: 0 1em;
+  max-width: 80%;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1em;
+  display: block;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid light-dark(#b2b2b2, #4d4d4d);
+}
+
+main div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box + .box > * {
+    margin-left: 15px; 
+  }
+
+@media (max-width: 850px) {
+  .block {
+    display: block;
+  }
+  .box {
+    width: 100% !important;
+  }
+  .box > * {
+    margin: 0 !important;
+  }
+  .box > p {
+    margin-bottom: 1em !important;
+  }
+}
+
+#foot {
+  position: sticky;
+  background: light-dark(#ffffff, #121212);
+  bottom: 0;
+  margin: auto;
+  padding-bottom: 1em;
+  max-width: 81%;
+  height: 2.5em;
+  color: light-dark(#6B7280, #A3A3A3);
+}
+#foot div {
+  margin: 0;
+  margin-left: 5px;
+  height: 2.1em;
+  overflow-y: auto;
+}
+
+#foot hr {
+  border-top: 2px solid #6C3BAA;
+}
