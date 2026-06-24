@@ -1,4 +1,4 @@
-fetch('./page/sample')
+fetch('./page/sample.txt')
   .then(response => {
     if (!response.ok) {
       throw new Error();
